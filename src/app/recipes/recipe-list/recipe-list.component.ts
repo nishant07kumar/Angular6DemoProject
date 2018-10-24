@@ -12,7 +12,7 @@ export class RecipeListComponent implements OnInit {
  recipes:Recipe[]=[
    new Recipe("Dokhla","This is Gujrati Recide","https://www.ruchiskitchen.com/wp-content/uploads/2015/01/dhokla-6.jpg"),
    new Recipe("Cake","This is Sweet Dish","https://d24pyncn3hxs0c.cloudfront.net/sites/default/files/styles/main_product_image/public/Truffle-Magic.jpg")
-   )
+   
  ];
   constructor() { }
 
