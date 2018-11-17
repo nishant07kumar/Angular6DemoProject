@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\recipes",
+    "\\src\\app\\recipes\\recipe-list"
   ],
-  "SelectedNode": "\\angular.json",
   "PreviewInSolutionExplorer": false
 }
