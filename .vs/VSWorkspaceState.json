@@ -4,7 +4,8 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\recipes",
-    "\\src\\app\\recipes\\recipe-list"
+    "\\src\\app\\recipes\\recipe-detail",
+    "\\src\\app\\shopping-list"
   ],
   "PreviewInSolutionExplorer": false
 }
