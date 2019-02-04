@@ -19,7 +19,7 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
   editedItem: Ingredient;
   constructor(private shoppingListService: ShoppingListService) { }
 
-  ngOnInit() {
+  ngOnInit() {    
     this.subscription = this.shoppingListService.editShoppngItem
       .subscribe((index: number) => {
         this.editMode = true;
@@ -33,7 +33,7 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.shoppingListService.editShoppngItem.unsubscribe();
+    //this.shoppingListService.editShoppngItem.unsubscribe();
   }
   onItemAdded(form: NgForm) {
     const value = form.value;

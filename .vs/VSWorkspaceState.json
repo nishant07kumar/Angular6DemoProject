@@ -3,9 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\header",
-    "\\src\\app\\shopping-list"
+    "\\src\\app\\shopping-list",
+    "\\src\\app\\shopping-list\\shopping-edit"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\app\\shopping-list\\shopping-edit\\shopping-edit.component.ts",
   "PreviewInSolutionExplorer": false
 }

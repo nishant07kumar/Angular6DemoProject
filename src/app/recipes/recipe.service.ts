@@ -8,9 +8,9 @@ import { ShoppingListService } from "../shopping-list/shopping-list.service";
 @Injectable()
 
 export class RecipeService {
-  
+
   private recipes: Recipe[] = [
-    new Recipe("Dokhla", "This is Gujrati Recide", "https://www.ruchiskitchen.com/wp-content/uploads/2015/01/dhokla-6.jpg", [new Ingredient('Floor', 4), new Ingredient('green chilli', 10)]),
+    new Recipe("Dokhla", "This is Gujrati Dish", "https://www.ruchiskitchen.com/wp-content/uploads/2015/01/dhokla-6.jpg", [new Ingredient('Floor', 4), new Ingredient('green chilli', 10)]),
     new Recipe("Cake", "This is Sweet Dish", "https://d24pyncn3hxs0c.cloudfront.net/sites/default/files/styles/main_product_image/public/Truffle-Magic.jpg", [new Ingredient('Chochlate', 250), new Ingredient('Bread', 1)])
 
   ];

@@ -13,7 +13,7 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <button class="btn btn-success btn-margin" [disabled]="!f.valid" type="submit">{{ editMode?"Update": "Add"}}</button>
+          <button class="btn btn-success btn-margin" [disabled]="!f.valid" type="submit">{{ editMode ? "Update": "Add"}}</button>
           <button class="btn btn-danger btn-margin" type="button" (click)="onDeleteItem()" *ngIf="editMode">Delete</button>
           <button class="btn btn-primary btn-margin" (click)="onClearData()" type="button">Clear</button>
         </div>
