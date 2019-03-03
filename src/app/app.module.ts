@@ -18,6 +18,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RecipeService } from './recipes/recipe.service';
 import { HttpModule } from "@angular/http";
 import { HttpDataService } from './shared/httpdata-service';
+import { SignupComponent } from './auth/signup/signup.component';
+import { SigninComponent } from './auth/signin/signin.component';
+import { AuthenticationService } from './auth/authentiction.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,9 @@ import { HttpDataService } from './shared/httpdata-service';
     ShoppingEditComponent,
     DropdownDirective,
     RecipeLandingComponent,
-    RecipeEditComponent
+    RecipeEditComponent,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +45,7 @@ import { HttpDataService } from './shared/httpdata-service';
     ReactiveFormsModule,
     HttpModule
   ],
-  providers: [RecipeService, ShoppingListService, HttpDataService],
+  providers: [RecipeService, ShoppingListService, HttpDataService, AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
