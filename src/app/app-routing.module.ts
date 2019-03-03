@@ -8,15 +8,16 @@ import { RecipeDetailComponent } from "./recipes/recipe-detail/recipe-detail.com
 import { RecipeEditComponent } from "./recipes/recipe-edit/recipe-edit.component";
 import { SignupComponent } from "./auth/signup/signup.component";
 import { SigninComponent } from "./auth/signin/signin.component";
+import { AuthenticatonGaurdService } from "./auth/authenticationgaurd.service";
 
 const applicationRoute: Routes = [
   { path: '', redirectTo: 'recipe', pathMatch: 'full' },
   {
     path: 'recipes', component: RecipesComponent, children: [
       { path: '', component: RecipeLandingComponent },
-      { path: 'new', component: RecipeEditComponent },
+      { path: 'new', component: RecipeEditComponent, canActivate: [AuthenticatonGaurdService] },
       { path: ':id', component: RecipeDetailComponent },
-      { path: ':id/edit', component: RecipeEditComponent }
+      { path: ':id/edit', component: RecipeEditComponent, canActivate: [AuthenticatonGaurdService] }
     ]
   },
   { path: 'shoppinglist', component: ShoppingListComponent },

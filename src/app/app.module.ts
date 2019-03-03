@@ -21,6 +21,7 @@ import { HttpDataService } from './shared/httpdata-service';
 import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { AuthenticationService } from './auth/authentiction.service';
+import { AuthenticatonGaurdService } from './auth/authenticationgaurd.service';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,7 @@ import { AuthenticationService } from './auth/authentiction.service';
     ReactiveFormsModule,
     HttpModule
   ],
-  providers: [RecipeService, ShoppingListService, HttpDataService, AuthenticationService],
+  providers: [RecipeService, ShoppingListService, HttpDataService, AuthenticationService, AuthenticatonGaurdService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
