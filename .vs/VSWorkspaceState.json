@@ -3,14 +3,17 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\auth",
+    "\\src\\app\\auth\\signin",
+    "\\src\\app\\auth\\signup",
+    "\\src\\app\\header",
     "\\src\\app\\recipes",
     "\\src\\app\\recipes\\recipe-detail",
     "\\src\\app\\recipes\\recipe-edit",
+    "\\src\\app\\recipes\\recipe-landing",
     "\\src\\app\\recipes\\recipe-list",
-    "\\src\\app\\recipes\\recipe-list\\recipe-item",
-    "\\src\\app\\shared",
-    "\\src\\app\\shopping-list",
-    "\\src\\app\\shopping-list\\shopping-edit"
+    "\\src\\app\\shared"
   ],
+  "SelectedNode": "\\src\\app\\recipes\\recipe-edit\\recipe-edit.component.ts",
   "PreviewInSolutionExplorer": false
 }
